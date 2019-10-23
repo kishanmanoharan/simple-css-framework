@@ -1,0 +1,395 @@
+/* Full sized container using full width of the viewport */
+
+.full-container {
+    margin: 0 auto;
+    width: 100%
+}
+
+
+/*
+    A little smaller container, adding a little padding 5% each side
+    will be used for mobile screens
+*/
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+
+/* Changing the padding if the screen is tablet size */
+
+@media only screen and (min-width:601px) {
+    .container {
+        width: 85%
+    }
+}
+
+
+/* Changing the padding if the screen is a desktop */
+
+@media only screen and (min-width:993px) {
+    .container {
+        width: 70%
+    }
+}
+
+
+/* Setting up rows */
+
+.container .row,
+.full-container .row {
+    margin-left: -.75rem;
+    margin-right: -.75rem
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+
+/*
+    Setting up columns:
+    These will be used to help set up custom sizing per screen size
+    for the grid elements
+*/
+
+.row .col {
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+    float: left
+}
+
+
+/* Columns for use on mobile devices */
+
+.row .col.sm-1 {
+    width: 8.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-2 {
+    width: 16.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-3 {
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-5 {
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-7 {
+    width: 58.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-8 {
+    width: 66.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-9 {
+    width: 75%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-10 {
+    width: 83.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-11 {
+    width: 91.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.row .col.sm-12 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+
+/* Columns for use on devices bigger than mobiles, tablets usually */
+
+@media only screen and (min-width:601px) {
+    .row .col.md-1 {
+        width: 8.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-2 {
+        width: 16.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-4 {
+        width: 33.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-5 {
+        width: 41.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-6 {
+        width: 50%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-7 {
+        width: 58.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-8 {
+        width: 66.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-9 {
+        width: 75%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-10 {
+        width: 83.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-11 {
+        width: 91.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.md-12 {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+}
+
+
+/* Columns for use on most desktop devices */
+
+@media only screen and (min-width:993px) {
+    .row .col.lg-1 {
+        width: 8.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-2 {
+        width: 16.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-4 {
+        width: 33.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-5 {
+        width: 41.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-6 {
+        width: 50%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-7 {
+        width: 58.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-8 {
+        width: 66.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-9 {
+        width: 75%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-10 {
+        width: 83.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-11 {
+        width: 91.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.lg-12 {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+}
+
+
+/* Columns for use on larger screens, usually just very large desktop screens */
+
+@media only screen and (min-width:1201px) {
+    .row .col.xlg-1 {
+        width: 8.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-2 {
+        width: 16.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-4 {
+        width: 33.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-5 {
+        width: 41.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-6 {
+        width: 50%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-7 {
+        width: 58.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-8 {
+        width: 66.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-9 {
+        width: 75%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-10 {
+        width: 83.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-11 {
+        width: 91.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+    .row .col.xlg-12 {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+}
+
+.footer {
+    width: 100%;
+}

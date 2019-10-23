@@ -1,0 +1,80 @@
+/* Set the initial opacity to zero so the modal is not shown */
+
+.modal {
+    position: fixed;
+    background-color: rgba(200, 200, 200, 0.75);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Position just below the loading animation */
+    z-index: 1499;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* This will set the modal to visible */
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* The actual modal - white box */
+
+.modal .modal-inner {
+    position: relative;
+    width: 60vw;
+    /* Don't want it to look too small */
+    min-height: 20%;
+    /* Don't let it flow past the bottom of the screen */
+    max-height: calc(100vh - 30vh);
+    background: white;
+    border-radius: 5px;
+    /* Push from the top to "center" it */
+    top: 20vh;
+    /* Center horizontally */
+    margin: auto;
+}
+
+
+/* A simple header font and sizing for the modal */
+
+.modal .modal-header {
+    font-size: 1.2em;
+    font-weight: 100;
+    border-bottom: 0.5px solid lightgrey;
+    /* Make this sort of like a "heading" on a modal */
+    display: block;
+    /* Expand it out to full width */
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.modal .modal-body {
+    padding: 0.5em;
+}
+
+
+/* A close button to toggle the modal visibility */
+
+.modal .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal .modal-close:hover {
+    color: #000;
+}

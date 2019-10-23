@@ -1,0 +1,41 @@
+/* Responsive images */
+
+.img-responsive {
+    overflow: hidden;
+}
+
+.img-responsive img {
+    width: 100%;
+}
+
+
+/* Profile image */
+
+.img-rounded {
+    border-radius: 50%;
+}
+
+
+/* Custom HR */
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid grey;
+}
+
+
+/* Custom padding classes */
+
+.padding-1 {
+    padding: 0 1em;
+}
+
+.padding-2 {
+    padding: 0 2em;
+}
+
+.padding-3 {
+    padding: 0 3em;
+}

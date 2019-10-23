@@ -1,0 +1,123 @@
+form {
+    width: 100%
+}
+
+input[type=email],
+input[type=file],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+select,
+textarea,
+textarea[type=text] {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    transition: all .2s ease;
+    border: 1px solid #141b24;
+    border-radius: 2px
+}
+
+input[type=email]:focus,
+input[type=file]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=url]:focus,
+select:focus,
+textarea:focus,
+textarea[type=text]:focus {
+    border-color: #141b24;
+    transition: all .2s ease
+}
+
+input[type=checkbox],
+input[type=radio] {
+    border: 0.5px solid black !important;
+}
+
+input,
+textarea {
+    padding: .9rem 1rem .9rem 2rem
+}
+
+select {
+    background: #fff;
+    padding: .9rem .5rem;
+    margin: 1.2rem 0
+}
+
+textarea {
+    resize: vertical;
+    min-height: 12rem;
+    margin: 0
+}
+
+.input-field span:before {
+    cursor: pointer;
+    position: relative;
+    font-family: fontawesome;
+    top: 3rem;
+    left: .6rem;
+    color: #212121
+}
+
+.text-area-field span:before {
+    top: 1.8rem
+}
+
+label {
+    cursor: pointer
+}
+
+label input[type=checkbox] {
+    display: none
+}
+
+label input[type=checkbox]+span:before {
+    color: hsla(0, 0%, 100%, 0)
+}
+
+label input[type=checkbox]+span:before,
+label input[type=checkbox]:checked+span:before {
+    content: "";
+    font-family: fontawesome;
+    border: 1px solid #212121;
+    padding: .4rem;
+    border-radius: 2px;
+    transition: .2s;
+    font-size: 16px
+}
+
+label input[type=checkbox]:checked+span:before {
+    color: #212121
+}
+
+label input[type=radio] {
+    display: none
+}
+
+label input[type=radio]+span:before {
+    color: hsla(0, 0%, 100%, 0)
+}
+
+label input[type=radio]+span:before,
+label input[type=radio]:checked+span:before {
+    content: "";
+    font-family: fontawesome;
+    border: 1px solid #212121;
+    padding: .3rem .4rem;
+    border-radius: 100%;
+    transition: .2s;
+    font-size: 14px
+}
+
+label input[type=radio]:checked+span:before {
+    color: #212121
+}

@@ -1,0 +1,154 @@
+.navbar {
+    overflow: hidden;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+}
+
+.navbar-fixed-top .dropdown {
+    position: fixed;
+    z-index: 1001;
+}
+
+.navbar-fixed-bottom {
+    position: fixed;
+    z-index: 1500;
+    width: 100%;
+    bottom: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a.active {
+    color: white;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+
+/* Dont have hover color changes for the navbar brand */
+
+.navbar-brand:hover {
+    background: unset !important;
+}
+
+
+/* Navbar colour options */
+
+.navbar-primary {
+    background: #54a0ff;
+}
+
+.navbar-primary a.active,
+.navbar-primary a:hover {
+    background: #2e86de;
+}
+
+.navbar-secondary {
+    background: #8395a7;
+}
+
+.navbar-secondary a.active,
+.navbar-secondary a:hover {
+    background: #576574;
+}
+
+.navbar-success {
+    background: #1dd1a1;
+}
+
+.navbar-success a.active,
+.navbar-success a:hover {
+    background: #10ac84;
+}
+
+.navbar-danger {
+    background: #ff6b6b;
+}
+
+.navbar-danger a.active,
+.navbar-danger a:hover {
+    background: #ee5253;
+}
+
+.navbar-warning {
+    background: #feca57;
+}
+
+.navbar-warning a.active,
+.navbar-warning a:hover {
+    background: #ff9f43;
+}
+
+.navbar-info {
+    background: #5f27cd;
+}
+
+.navbar-info a.active,
+.navbar-info a:hover {
+    background: #341f97;
+}
+
+.navbar-dark {
+    background: #222f3e;
+}
+
+.navbar-dark a.active,
+.navbar-dark a:hover {
+    background: #141b24;
+}
+
+
+/* adding dropdown support for navbars */
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1000;
+    margin-top: 3em;
+    background: #222f3e;
+    color: white;
+}
+
+.dropdown-content a {
+    color: #cccccc;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Reset the hover animation, don't use the navbar theme */
+
+.dropdown-content a:hover {
+    background: unset;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: white;
+}
+
+.dropdown-content li {
+    list-style: none;
+    clear: both;
+}
